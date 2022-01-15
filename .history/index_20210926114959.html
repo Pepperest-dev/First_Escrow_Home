@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mobileScreenStyles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>First Escrow</title>
+  </head>
+  <body>
+    <!-- Create a container wrapper to  -->
+    <!-- create a container to keep everything contained in a certain width  ##done -->
+    <!-- create the Navbar ##Done -->
+    <!-- Do the font setup from google fonts  ##Done-->
+    <!-- make the navbar responsive  Not done-->
+    <!-- create the hero section ##almost -->
+    <!-- work on the what can we do or you ssection -->
+    <!-- Work on how does first escrow  works-->
+    <!-- work on refund is guranteed  section  -->
+    <!-- how it works in simple steps section -->
+    <!-- work on the footer section -->
+    <header class="banner mb-10 overflow-x-hidden overscroll-none">
+      <nav
+        class="
+          h-24
+          flex
+          justify-between
+          items-center
+          md:w-11/12 md:p-0
+          px-7
+          mx-auto
+          mb-6
+        "
+      >
+        <a href="/">
+          <img
+            src="/assets/imgs/firstBank_logo.png"
+            alt="First Bank Logo"
+            class="BrandLogo cursor-pointer"
+          />
+        </a>
+
+        <ul class="md:flex hidden w-2/12 h-full justify-between items-center">
+          <li class="loginLink"><a href="#">Logo</a></li>
+          <li>
+            <button class="getStartedBtn hover:drop-shadow-xl">
+              Get Started
+            </button>
+          </li>
+        </ul>
+
+        <div id="hambugger" class="hambugger cursor-pointer md:hidden">
+          <i id="menuToggler" class="fa fa-2x fa-bars"></i>
+        </div>
+      </nav>
+
+      <main class="md:w-11/12 mb-3 md:p-0 px-7 mx-auto">
+        <article>
+          <p
+            class="
+              text-center
+              mx-auto
+              flex
+              justify-around
+              items-center
+              firstEscrow
+            "
+          >
+            First Escrow
+          </p>
+          <h1 class="mainTitle text-center mx-auto">
+            Buy & Sell With <span class="">Ease</span>
+            <img
+              src="/assets/icons/bigEaseElipses.png"
+              alt="elipses"
+              class="elipses"
+            />
+          </h1>
+          <p class="contentDescription mx-auto">
+            FirstEscrow helps you ensure that what you ordered and what was
+            delivered are the same before the seller gets paid. And if the item
+            is different, you get your
+            <span class="greenMoneyText">money back</span> in record time!
+          </p>
+          <form
+            class="
+              my-5
+              mx-auto
+              flex
+              justify-between
+              items-center
+              cursor-pointer
+              bannerInputField
+            "
+          >
+            <input
+              type="text"
+              class="h-full"
+              placeholder="Enter your email address"
+            />
+            <button
+              type="submit"
+              class="getStartedBtn z-10 hover:drop-shadow-xl"
+            >
+              Get Started
+            </button>
+          </form>
+        </article>
+        <img
+          src="/assets/imgs/dashboardMockup.png"
+          class="dashboardImg cursor-pointer mx-auto"
+          alt="dashboard mockup"
+        />
+      </main>
+    </header>
+    <div class="wrapper">
+      <section
+        class="
+          mt-10
+          w-11/12
+          mx-auto
+          overflow-x-hidden
+          gap-x-8
+          items-center
+          flex
+          justify-between
+          flex-wrap-reverse
+          md:flex-nowrap
+        "
+      >
+        <div class="">
+          <img
+            class="object-contain"
+            src="/assets/imgs/bagAndCard.png"
+            alt="bag and card"
+          />
+        </div>
+        <div class="">
+          <p
+            class="text-left flex justify-start items-center yellowFirstEscrow"
+          >
+            First Escrow
+          </p>
+
+          <h1 class="mainTitle">What can you do with FirstEscrow?</h1>
+
+          <ul id="FirstEscrowCanDo"></ul>
+          <button class="getStartedBtn hover:drop-shadow-xl my-5">
+            Get Started Now
+          </button>
+        </div>
+      </section>
+    </div>
+    <div class="wrapper outline">
+      <section class="mt-10 mb-5 w-11/12 mx-auto overflow-x-hidden">
+        <p
+          class="
+            text-center
+            mx-auto
+            flex
+            justify-around
+            items-center
+            secondYellowFirstEscrow
+          "
+        >
+          Safeguard Your Money
+        </p>
+
+        <h3 class="text-center protectTitle">
+          How does FirstEscrow protect my money?
+        </h3>
+        <p class="contentDescription mx-auto">
+          FirstEscrow does this in
+          <span class="yellowText">3 easy steps</span>
+        </p>
+
+        <div
+          id="threeBoxes"
+          class="flex justify-around items-center outline my-5"
+        >
+          <div class="box flex flex-col items-center justify-around p-5">
+            <div class="boxImage">
+              <img src="/assets/imgs/parcelBox.png" alt="" srcset="" />
+            </div>
+            <p class="boxTitle">We verify the product</p>
+            <p class="boxTextContent text-center">
+              All items being purchased must be documented with specific details
+              (colour, size, delivery date, sample photo) which the seller must
+              consent to.
+            </p>
+          </div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

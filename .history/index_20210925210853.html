@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mobileScreenStyles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>First Escrow</title>
+  </head>
+  <body>
+    <!-- Create a container wrapper to  -->
+    <div class="container w-screen">
+      <!-- create a container to keep everything contained in a certain width -->
+      <!-- create the Navbar -->
+      <!-- Do the font setup from google fonts -->
+      <!-- make the navbar responsive -->
+      <!-- create the hero section -->
+      <!-- work on the what can we do or you ssection -->
+      <!-- Work on how does first escrow  works-->
+      <!-- work on refund is guranteed  section  -->
+      <!-- how it works in simple steps section -->
+      <!-- work on the footer section -->
+      <header class="banner h-12/12 overflow-hidden">
+        <nav
+          class="
+            h-24
+            flex
+            justify-between
+            items-center
+            md:w-11/12 md:p-0
+            px-7
+            mx-auto
+            mb-6
+          "
+        >
+          <a href="/">
+            <img
+              src="/assets/imgs/firstBank_logo.png"
+              alt="First Bank Logo"
+              class="BrandLogo cursor-pointer"
+            />
+          </a>
+
+          <ul class="md:flex hidden w-2/12 h-full justify-between items-center">
+            <li class="loginLink"><a href="#">Logo</a></li>
+            <li>
+              <button class="getStartedBtn hover:drop-shadow-xl">
+                Get Started
+              </button>
+            </li>
+          </ul>
+
+          <div id="hambugger" class="hambugger cursor-pointer md:hidden">
+            <i id="menuToggler" class="fa fa-2x fa-bars"></i>
+          </div>
+        </nav>
+
+        <main class="md:w-11/12 outline md:p-0 px-7 mx-auto">
+          <article>
+            <p
+              class="
+                text-center
+                mx-auto
+                flex
+                justify-around
+                items-center
+                firstEscrow
+              "
+            >
+              First Escrow
+            </p>
+            <h1 class="mainTitle outline">
+              Buy & Sell With <span class="easeElipses">Ease</span>
+              <img
+                src="/assets/icons/bigEaseElipses.png"
+                alt="elipses"
+                srcset="elipses"
+              />
+            </h1>
+          </article>
+          <img
+            src="/assets/imgs/dashboardMockup.png"
+            class="dashboardImg"
+            alt="dashboard mockup"
+          />
+        </main>
+        <!-- <h1>First Escrows</h1> -->
+      </header>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

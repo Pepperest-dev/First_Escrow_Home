@@ -1,0 +1,61 @@
+@media screen and (max-width: 600px) {
+  .banner {
+    background-size: contain;
+  }
+  .dashboardImg {
+    width: 500px;
+    height: auto;
+  }
+
+  .BrandLogo {
+    width: 100px;
+  }
+
+  .toggle {
+    transition: opacity ease-in-out;
+  }
+
+  .elipses {
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    right: 9%;
+  }
+
+  .wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .faceRightDown {
+    transform: rotate(99deg);
+  }
+  .faceLeftDown {
+    transform: rotate(99deg);
+  }
+
+  .refundSectionTitle {
+    color: var(--whiteBgColor);
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: var(--rubikFontFamily);
+  }
+
+  .refundSection {
+  background-color: var(--darkBlueTextColor);
+  border-radius: 12px;
+  background-image: url(/assets/imgs/NairaOverlayBg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  min-height: 300px;
+}
+
+}

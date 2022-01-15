@@ -1,0 +1,46 @@
+@media screen and (max-width: 600px) {
+  .banner {
+    background-size: contain;
+  }
+  .dashboard {
+    width: 100%;
+    height: auto;
+    /* margin: 3rem auto; */
+  }
+
+  .BrandLogo {
+    width: 100px;
+  }
+
+  .hambugger {
+    display: block;
+    /* position: absolute; */
+    /* cursor: pointer; */
+    /* right: 5%; */
+    /* top: 50%; */
+    /* transform: translate(-5%, -50%); */
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+
+  .hamburgger div {
+    border: 3px solid green;
+    width: 30px;
+    height: 3px;
+    background: var(--BtnBgColor);
+    /* margin: 5px; */
+    transition: all 0.3s ease;
+  }
+
+  /*Animating Hamburger Icon on Click*/
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}

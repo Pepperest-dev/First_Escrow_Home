@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Colors varable declaration */
+:root {
+  --whiteBgColor: #ffffff;
+  --BtnBgColor: #162d4c;
+  --lightBlueColor: #0093c9;
+  --yellowPrimaryColor: #ffb300;
+  --boxesTextColor: #707070;
+  --darkBlueTextColor: #101933;
+  --bannerTextColor: #707585;
+  --lightGreenColor: #28a745;
+  --inputFieldBorderColor: #d8dade;
+  --footerBackgroundColor: #f6f6f7;
+  --footerTextColor: #040c22;
+}
+
+.banner {
+  background-image: url(../assets/imgs/overlayBackground.png);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dashboardImg {
+  width: 80%;
+  height: auto;
+  /* margin: 3rem auto; */
+}
+
+.container {
+  background-color: var(--whiteBgColor);
+}
+
+.Branlogo {
+  width: auto;
+
+  /* height: 45px; */
+}
+
+.outline {
+  outline: 1px solid blue;
+}

@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+  .banner {
+    background-size: contain;
+  }
+  .dashboard {
+    width: 100vw;
+    height: auto;
+  }
+
+  .BrandLogo {
+    width: 100px;
+  }
+
+  .toggle {
+    transition: opacity ease-in-out;
+  }
+
+  .elipses {
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    right: 9%;
+  }
+}

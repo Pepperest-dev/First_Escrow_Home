@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  text-decoration: none;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Colors varable declaration */
+:root {
+  --whiteBgColor: #ffffff;
+  --BtnBgColor: #162d4c;
+  --lightBlueColor: #0093c9;
+  --yellowPrimaryColor: #ffb300;
+  --boxesTextColor: #707070;
+  --darkBlueTextColor: #101933;
+  --bannerTextColor: #707585;
+  --lightGreenColor: #28a745;
+  --inputFieldBorderColor: #d8dade;
+  --footerBackgroundColor: #f6f6f7;
+  --footerTextColor: #040c22;
+  --latoFontFamily: "Lato", sans-serif;
+  --rubikFontFamily: "Rubik", sans-serif;
+  --arialFontFamily: "Arial", sans-serif;
+}
+
+.banner {
+  background-image: url(../assets/imgs/overlayBackground.png);
+  /* height: 100vh; */
+  width: 100vw;
+  background-position: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.dashboardImg {
+  width: 100%;
+  height: auto;
+  /* margin: 3rem auto; */
+}
+
+.container {
+  background-color: var(--whiteBgColor);
+}
+
+.BrandLogo {
+  width: 150px;
+  object-fit: contain;
+  height: 45px;
+}
+
+.outline {
+  outline: 1px solid blue;
+}
+
+.loginLink {
+  font: normal normal 600 16px/19px Lato;
+  letter-spacing: 0.32px;
+  font-family: var(--latoFontFamily);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--darkBlueTextColor);
+}
+
+.loginLink:hover {
+  opacity: 0.8;
+  transition: all ease-in-out 350ms;
+}
+
+.getStartedBtn {
+  border-radius: 8px;
+  background-color: var(--BtnBgColor);
+  width: 100px;
+  height: 50px;
+  color: var(--whiteBgColor);
+  font-family: var(--latoFontFamily);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.getStartedBtn:hover {
+  opacity: 0.8;
+  transition: all ease-in-out 350ms;
+}
+
+.firstEscrow {
+  letter-spacing: 1.2px;
+  color: var(--BtnBgColor);
+  text-transform: uppercase;
+  font-family: var(--rubikFontFamily);
+  font-size: 13px;
+  font-weight: 600;
+  width: 180px;
+}
+
+.firstEscrow::before {
+  content: "";
+  display: flex;
+  width: 20px;
+  border: 1px solid var(--lightBlueColor);
+  background-color: var(--lightBlueColor);
+}
+.firstEscrow::after {
+  content: "";
+  display: flex;
+  width: 20px;
+  background-color: var(--lightBlueColor);
+  border: 1px solid var(--lightBlueColor);
+}
+.mainTitle {
+  text-align: center;
+  color: var(--darkBlueTextColor);
+  font-family: var(--arialFontFamily);
+  font-weight: 700;
+  font-size: 2.8rem;
+  max-width: 600px;
+  position: relative;
+}
+
+.elipses {
+  position: absolute;
+  width: 150px;
+  top: -11px;
+  right: 10%;
+}
+
+.contentDescription {
+  color: var(--bannerTextColor);
+  font-family: var(--latoFontFamily);
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  max-width: 650px;
+}
+
+.greenMoneyText {
+  color: var(--lightGreenColor);
+}
+
+.bannerInputField {
+  width: 390px;
+  height: 60px;
+  border: 1px solid var(--inputFieldBorderColor);
+  border-radius: 12px;
+  background: var(--whiteBgColor);
+  padding: 8px 6px 8px 8px;
+}
+
+.bannerInputField input[type="text"] {
+  border: none;
+  font-family: var(--latoFontFamily);
+  font-size: 16px;
+  color: var(--bannerTextColor);
+  flex: 0.9;
+  font-weight: 600;
+  outline: none;
+}
+
+.bannerInputField input[type="text"]::placeholder {
+  font-family: var(--latoFontFamily);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--bannerTextColor);
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="Styles/mobileScreenStyles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>First Escrow</title>
+  </head>
+  <body>
+    <!-- Header and Nav bar section -->
+    <header class="mb-10 overflow-x-hidden banner overscroll-none">
+      <div class="mb-6">
+        <nav
+          class="flex items-center justify-between h-24 mx-auto md:w-11/12 md:p-0 px-7"
+        >
+          <a href="/">
+            <img
+              src="/assets/imgs/firstBank_logo.png"
+              alt="First Bank Logo"
+              class="cursor-pointer BrandLogo"
+            />
+          </a>
+
+          <ul class="items-center justify-between hidden w-2/12 h-full md:flex">
+            <li class="pr-2 loginLink"><a href="#">Login</a></li>
+            <li>
+              <button class="getStartedBtn hover:drop-shadow-xl">
+                Get Started
+              </button>
+            </li>
+          </ul>
+
+          <div id="hambugger" class="cursor-pointer hambugger md:hidden">
+            <i id="menuToggler" class="fa fa-2x fa-bars"></i>
+          </div>
+        </nav>
+        <ul
+          id="mobileNav"
+          class="w-10/12 mx-auto rounded-md shadow-lg hideMobileNav md:hidden hover:shadow-2xl"
+        >
+          <li class="p-3 loginLink"><a href="#">Login</a></li>
+          <li class="p-3">
+            <button class="getStartedBtn hover:drop-shadow-xl">
+              Get Started
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <main class="mx-auto mt-10 mb-3 md:w-11/12 md:p-0 px-7">
+        <article
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-easing="ease-out"
+          data-aos-once="false"
+        >
+          <p
+            class="flex items-center justify-around mx-auto text-center firstEscrow"
+          >
+            First Escrow
+          </p>
+          <h1 class="mx-auto text-center mainTitle">
+            Buy & Sell With <span class="">Ease</span>
+            <img
+              src="/assets/icons/bigEaseElipses.png"
+              alt="elipses"
+              class="elipses"
+            />
+          </h1>
+          <p class="mx-auto contentDescription">
+            FirstEscrow helps you ensure that what you ordered and what was
+            delivered are the same before the seller gets paid. And if the item
+            is different, you get your
+            <span class="greenMoneyText">money back</span> in record time!
+          </p>
+          <form
+            class="flex items-center justify-between pl-4 mx-auto my-5 cursor-pointer bannerInputField"
+          >
+            <input
+              type="text"
+              class="h-full"
+              placeholder="Enter your email address"
+            />
+            <button
+              type="submit"
+              class="z-10 getStartedBtn hover:drop-shadow-xl"
+            >
+              Get Started
+            </button>
+          </form>
+        </article>
+        <img
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-easing="ease-in"
+          data-aos-once="false"
+          src="/assets/imgs/dashboardMockup.png"
+          class="mx-auto cursor-pointer dashboardImg"
+          alt="dashboard mockup"
+        />
+      </main>
+    </header>
+
+    <!-- What can you do with firstEscrow section -->
+    <div class="wrapper">
+      <section
+        class="flex flex-wrap-reverse items-center justify-between w-11/12 mx-auto mt-10 overflow-x-hidden gap-x-8 md:flex-nowrap"
+      >
+        <div
+          class=""
+          data-aos-delay="100"
+          data-aos-easing="ease-out"
+          data-aos-once="false"
+          data-aos="fade-right"
+        >
+          <img
+            class="object-contain"
+            src="/assets/imgs/bagAndCard.png"
+            alt="bag and card"
+          />
+        </div>
+        <div
+          class=""
+          data-aos-delay="100"
+          data-aos-easing="ease-out"
+          data-aos-once="false"
+          data-aos="fade-left"
+        >
+          <p
+            class="flex items-center justify-start text-left yellowFirstEscrow"
+          >
+            First Escrow
+          </p>
+
+          <h1 class="mainTitle">What can you do with FirstEscrow?</h1>
+
+          <ul id="FirstEscrowCanDo"></ul>
+          <button class="my-5 getStartedBtn hover:drop-shadow-xl">
+            Get Started Now
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Safeguard your money section -->
+    <div class="wrapper">
+      <section class="w-11/12 mx-auto mt-10 mb-5 overflow-x-hidden">
+        <div
+          data-aos-delay="200"
+          data-aos-easing="ease-out"
+          data-aos-once="false"
+          data-aos="fade-left"
+        >
+          <p
+            class="flex items-center justify-around mx-auto text-center secondYellowFirstEscrow"
+          >
+            Safeguard Your Money
+          </p>
+
+          <h3 class="text-center protectTitle">
+            How does FirstEscrow protect my money?
+          </h3>
+          <p class="mx-auto contentDescription">
+            FirstEscrow does this in
+            <span class="yellowText">3 easy steps</span>
+          </p>
+        </div>
+
+        <div
+          id="threeBoxes"
+          class="flex flex-wrap items-center my-5 justify-evenly"
+        ></div>
+      </section>
+    </div>
+
+    <!-- Refund Guaranteed section -->
+    <div class="wrapper">
+      <section data-aos-delay="100"
+          data-aos-easing="ease-out"
+          data-aos-once="false"
+          data-aos="fade-up"
+        class="w-11/12 p-10 mx-auto mt-16 mb-5 overflow-x-hidden refundSection gap-x-8"
+      >
+        <div class="flex flex-col justify-around h-full items center titleSide" data-aos-delay="300"
+          data-aos-easing="ease-out"
+          data-aos-once="false"
+          data-aos="fade-up">
+          <h1 class="text-white refundSectionTitle">
+            Refund is guaranteed in case merchant fails to deliver
+          </h1>
+
+          <p class="mt-4 mr-5 refundSectionTextContent md:hidden md:mr-0">
+            If merchant fails to deliver or delivers an item below the agreed
+            upon standard, you will get 100% of your money back!
+          </p>
+
+          <button
+            type="submit"
+            class="mt-10 yellowGetStartedBtn hover:drop-shadow-xl"
+          >
+            Get Started
+          </button>
+        </div>
+        <div class="hidden w-3/5 h-full md:block">
+          <p
+            class="mt-4 mr-5 refundSectionTextContent md:mr-0 xl:pr-20 sm:pr-0"
+          >
+            If merchant fails to deliver or delivers an item below the agreed
+            upon standard, you will get 100% of your money back!
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- How it works section -->
+    <div class="wrapper">
+      <section  class="w-11/12 mx-auto mt-16 mb-5">
+        <p
+          class="flex items-center justify-around mx-auto text-center howItWorksYellow"
+        >
+          How it works
+        </p>
+
+        <h3 class="text-center protectTitle">How it works in simple steps</h3>
+
+        <main
+          class="flex flex-wrap items-center justify-center mx-auto gap-x-8"
+        >
+          <div class="h-56 my-3 fourBoxes w-52">
+            <div class="flex flex-col items-center mx-auto">
+              <img
+                class="w-24"
+                src="/assets/imgs/PinkAvatar.png"
+                alt="purple avatar"
+              />
+              <div class="flex mt-2">
+                <span class="mr-2 AvatarYellowNumber">1</span>
+                <p class="AvatarTitle">Create an order</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-end">
+              <img
+                src="/assets/icons/arrowBottom.png"
+                alt="arrow bottom"
+                class="hidden h-28 md:block w-28"
+              />
+              <img
+                src="/assets/icons/arrowTop.png"
+                alt="arrow bottom"
+                class="block w-24 h-24 faceRightDown md:hidden"
+              />
+            </div>
+          </div>
+          <div class="h-56 my-3 fourBoxes w-52">
+            <div class="flex flex-col items-center block mx-auto md:hidden">
+              <img
+                class="w-24"
+                src="/assets/imgs/purpleAvatar.png"
+                alt="purple avatar"
+              />
+              <div class="flex mt-2">
+                <span class="mr-2 AvatarYellowNumber">2</span>
+                <p class="AvatarTitle">Confirm order</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-start md:justify-end">
+              <img
+                src="/assets/icons/arrowTop.png"
+                alt="arrow bottom"
+                class="hidden h-28 md:block w-28"
+              />
+              <img
+                src="/assets/icons/arrowBottom.png"
+                alt="arrow bottom"
+                class="block w-24 h-24 faceLeftDown md:hidden"
+              />
+            </div>
+            <div class="flex flex-col items-center hidden mx-auto md:block">
+              <img
+                class="w-24"
+                src="/assets/imgs/purpleAvatar.png"
+                alt="purple avatar"
+              />
+              <div class="flex mt-2">
+                <span class="mr-2 AvatarYellowNumber">2</span>
+                <p class="AvatarTitle">Confirm order</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-56 my-3 fourBoxes w-52">
+            <div class="flex flex-col items-center mx-auto">
+              <img
+                class="w-24"
+                src="/assets/imgs/dollarCurrency.png"
+                alt="purple avatar"
+              />
+              <div class="flex mt-2">
+                <span class="mr-2 AvatarYellowNumber">3</span>
+                <p class="AvatarTitle">Make Payment</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-end">
+              <img
+                src="/assets/icons/arrowBottom.png"
+                alt="arrow bottom"
+                class="hidden h-28 md:block w-28"
+              />
+              <img
+                src="/assets/icons/arrowTop.png"
+                alt="arrow bottom"
+                class="block w-24 h-24 faceRightDown md:hidden"
+              />
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-start h-56 my-3 fourBoxes md:justify-end w-54"
+          >
+            <div class="flex flex-col items-center mx-auto">
+              <img
+                class="w-24"
+                src="/assets/imgs/yellowAvatar.png"
+                alt="purple avatar"
+              />
+              <div class="flex items-center justify-start mt-2">
+                <span class="mr-2 AvatarYellowNumber">4</span>
+                <p class="AvatarTitle">your order gets delivered to you</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+
+    <!-- Footer Sections starts here -->
+    <footer class="wrapper">
+      <section
+        class="flex flex-wrap items-end justify-between w-11/12 px-5 py-5 mx-auto mt-16 mb-5 footerSection gap-x-8 md:flex-nowrap md:px-10"
+      >
+        <div
+          class="flex flex-col items-start justify-between w-full h-full md:w-6/12 foooterBoxHeight"
+        >
+          <a href="/">
+            <img
+              src="/assets/imgs/firstBank_logo.png"
+              alt="First Bank Logo"
+              class="cursor-pointer BrandLogo"
+            />
+          </a>
+
+          <p class="footerTitle">Subscribe</p>
+          <p class="footerTextContent">
+            Select topics and stay current with our latest insights
+          </p>
+
+          <form
+            action=""
+            class="flex-wrap w-full footerForm md:min-w-8/12 md:w-9/12"
+          >
+            <input
+              placeholder="Email address"
+              class="flex flex-1 my-1 md:my-0 footerInput md:mr-3"
+              type="text"
+            />
+            <button
+              class="mx-auto my-1 getStartedBtn hover:drop-shadow-xl md:my-0 md:mt-0 md:mx-0"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="w-4/6 h-full mx-auto md:mx-0 md:w-3/12">
+          <div class="flex h-full mt-3 md:mt-0 justify-evenly">
+            <a href="#" class="footerSocialIcon">
+              <img
+                src="/assets/imgs/fb_logo.png"
+                class="w-8"
+                alt="facebook logo"
+              />
+            </a>
+            <a href="#" class="footerSocialIcon">
+              <img
+                src="/assets/imgs/twt_logo.png"
+                class="w-8"
+                alt="facebook logo"
+              />
+            </a>
+            <a href="#" class="footerSocialIcon">
+              <i class="text-white fa fa-youtube-square"></i>
+            </a>
+            <a href="#" class="footerSocialIcon">
+              <i class="text-white fa fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <footer class="mb-5 wrapper">
+      <p class="text-center footerDate">© 2021-2022 FirstEscrow</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="Js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+@media screen and (max-width: 600px) {
+  .banner {
+    background-size: contain;
+  }
+  .dashboardImg {
+    width: 500px;
+    height: auto;
+  }
+
+  .BrandLogo {
+    width: 100px;
+  }
+
+  .toggle {
+    transition: opacity ease-in-out;
+  }
+
+  .elipses {
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    right: 30%;
+  }
+
+  .wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .faceRightDown {
+    transform: rotate(99deg);
+    animation: breathing 2s ease-out infinite normal;
+  }
+  .faceLeftDown {
+    transform: rotate(99deg);
+    animation: breathing 2s ease-out infinite normal;
+  }
+
+  .refundSectionTitle {
+    color: var(--whiteBgColor);
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: var(--rubikFontFamily);
+  }
+
+  .refundSection {
+    background-color: var(--darkBlueTextColor);
+    border-radius: 12px;
+    background-image: url(/assets/imgs/NairaOverlayBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .elipses {
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    right: 10%;
+  }
+}
+
+@keyframes breathing {
+  /* 0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  } */
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}

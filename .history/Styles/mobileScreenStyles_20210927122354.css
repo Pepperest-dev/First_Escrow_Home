@@ -1,0 +1,36 @@
+@media screen and (max-width: 600px) {
+  .banner {
+    background-size: contain;
+  }
+  .dashboardImg {
+    width: 500px;
+    height: auto;
+  }
+
+  .BrandLogo {
+    width: 100px;
+  }
+
+  .toggle {
+    transition: opacity ease-in-out;
+  }
+
+  .elipses {
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    right: 9%;
+  }
+
+  .wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .faceDown {
+    transform: rotate(99deg);
+  }
+}

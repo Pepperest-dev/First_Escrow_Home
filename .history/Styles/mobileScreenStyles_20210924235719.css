@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+  .banner {
+    background-size: contain;
+  }
+  img {
+    width: 100vw;
+    height: auto;
+    margin: 3rem auto;
+  }
+}
